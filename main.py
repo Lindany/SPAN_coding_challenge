@@ -63,16 +63,19 @@ def allocatePoints(matchGame, teamsList):
 def displayTeamsLogStanding(teamsList):
     """Display the leauge standing"""
     indexRanking = 1 
-    sameRank = 0
+    previousPoints = 0
+    sameRank = 1
     points = 0
     print("\n\n")
     for team in (sorted(teamsList.items(), key = lambda points: points[1][4],reverse=True)):
         points = team[1][4]
+        if(points != previousPoints): sameRank = indexRanking
         isOnePoint ="pts"
         if(points == 1): isOnePoint = "pt"
-        ouput = f'{indexRanking}. {team[0]}, {points} {isOnePoint}'
+        ouput = f'{sameRank}. {team[0]}, {points} {isOnePoint}'
         print(ouput)
         indexRanking += 1
+        previousPoints = points
         
 
 if __name__ == '__main__':
