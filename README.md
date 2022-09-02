@@ -15,7 +15,7 @@ Project is created with:
 	
 ## Run this project
 To run this project, simply run python in terminal:
-
+See the example below: ![Runing Project](doc/Project Run.png "Running project")
 ```
 $ cd ../span-coding-challenge
 $ python main.py
@@ -26,5 +26,6 @@ Also run in terminal:
 
 ```
 $ cd ../span-coding-challenge
+$ pip install pytest
 $ python test.py
 ```
