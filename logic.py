@@ -29,7 +29,7 @@ def allocatePoints(matchGame, teamsList):
     """
     Receives the match results and immediately allocates points accordingly
     - if team 1 won, allocate 3 pts
-    - if team 1 lose allocate 9 pts
+    - if team 1 lose allocate 0 pts
     - Otherwiae 1 pts allocated. 
     """
     (team_1, team_2, scoreOutcome) = retrieveTeams(matchGame)
