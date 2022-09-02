@@ -23,7 +23,7 @@ $ python main.py
 
 ## Running Tests
 Also run in terminal:
-
+See the example below: ![Testing Project](doc/test.png "Testing project")
 ```
 $ cd ../span-coding-challenge
 $ pip install pytest
